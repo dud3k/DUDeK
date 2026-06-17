@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" width="1920" height="1080" font-family="Segoe UI, Inter, Arial, sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="28%" cy="18%" r="120%">
+      <stop offset="0%" stop-color="#17242F"/>
+      <stop offset="100%" stop-color="#0C141E"/>
+    </radialGradient>
+    <g id="bird">
+      <!-- czub: 5 piór z jasną przepaską i ciemną końcówką -->
+      <g fill="#E8923F">
+        <g transform="rotate(-28)"><rect x="16" y="-6.5" width="46" height="13" rx="6.5"/><rect x="44" y="-6.5" width="5" height="13" rx="2" fill="#F2E7D5"/><circle cx="57" cy="0" r="7" fill="#7A3E1B"/></g>
+        <g transform="rotate(-52)"><rect x="16" y="-6.5" width="46" height="13" rx="6.5"/><rect x="44" y="-6.5" width="5" height="13" rx="2" fill="#F2E7D5"/><circle cx="57" cy="0" r="7" fill="#7A3E1B"/></g>
+        <g transform="rotate(-76)"><rect x="16" y="-6.5" width="46" height="13" rx="6.5"/><rect x="44" y="-6.5" width="5" height="13" rx="2" fill="#F2E7D5"/><circle cx="57" cy="0" r="7" fill="#7A3E1B"/></g>
+        <g transform="rotate(-100)"><rect x="16" y="-6.5" width="46" height="13" rx="6.5"/><rect x="44" y="-6.5" width="5" height="13" rx="2" fill="#F2E7D5"/><circle cx="57" cy="0" r="7" fill="#7A3E1B"/></g>
+        <g transform="rotate(-124)"><rect x="16" y="-6.5" width="46" height="13" rx="6.5"/><rect x="44" y="-6.5" width="5" height="13" rx="2" fill="#F2E7D5"/><circle cx="57" cy="0" r="7" fill="#7A3E1B"/></g>
+      </g>
+      <!-- dziób -->
+      <path d="M -82 26 L -14 -6 L -8 10 Z" fill="#35465B"/>
+      <!-- głowa -->
+      <circle r="30" fill="#E8923F"/>
+      <!-- oko -->
+      <circle cx="2" cy="-7" r="4.2" fill="#101820"/>
+    </g>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <!-- ====== NAGŁÓWEK ====== -->
+  <use xlink:href="#bird" href="#bird" transform="translate(152,120) scale(1.25)"/>
+  <text x="252" y="134" font-size="88" font-weight="800" letter-spacing="6" fill="#EAF1F8">DUDEK</text>
+  <text x="254" y="180" font-size="26" fill="#9FB3C8"><tspan fill="#E8923F" font-weight="700">D</tspan>isciplined <tspan fill="#E8923F" font-weight="700">U</tspan>niversal <tspan fill="#E8923F" font-weight="700">DE</tspan>velopment <tspan fill="#E8923F" font-weight="700">K</tspan>it</text>
+  <text x="1840" y="118" font-size="17" letter-spacing="3" fill="#9FB3C8" text-anchor="end">TRZY ROLE · DWIE BRAMKI · JEDNO ŹRÓDŁO PRAWDY</text>
+  <text x="1840" y="150" font-size="14" fill="#5E7891" text-anchor="end">claude-workflow-kit v2 · OpenSpec inside</text>
+  <line x1="80" y1="212" x2="1840" y2="212" stroke="#2A3B50" stroke-width="1.5"/>
+
+  <!-- ====== LEWA KOLUMNA: WARSTWY ====== -->
+  <text x="80" y="262" font-size="16" letter-spacing="3" fill="#E8923F" font-weight="700">ARCHITEKTURA WARSTW</text>
+
+  <!-- Warstwa 0 -->
+  <rect x="80" y="284" width="440" height="144" rx="14" fill="#1C2939" stroke="#2E415A" stroke-width="1.5"/>
+  <rect x="80" y="284" width="7" height="144" rx="3.5" fill="#E8923F"/>
+  <rect x="448" y="300" width="52" height="22" rx="11" fill="none" stroke="#C8915F"/>
+  <text x="474" y="315" font-size="11" letter-spacing="1" fill="#C8915F" text-anchor="middle">KIT</text>
+  <text x="108" y="318" font-size="13" letter-spacing="2" fill="#C8915F">WARSTWA 0</text>
+  <text x="108" y="352" font-size="26" font-weight="700" fill="#EAF1F8">DISCOVERY</text>
+  <text x="108" y="382" font-size="16" fill="#9FB3C8">Persony + Jobs-To-Be-Done</text>
+  <text x="108" y="406" font-size="16" fill="#9FB3C8">→ PRODUCT_BRIEF.md</text>
+  <path d="M -14 0 L 0 12 L 14 0" transform="translate(300,442)" stroke="#E8923F" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Warstwa 1 -->
+  <rect x="80" y="468" width="440" height="144" rx="14" fill="#1C2939" stroke="#2E415A" stroke-width="1.5"/>
+  <rect x="80" y="468" width="7" height="144" rx="3.5" fill="#E8923F"/>
+  <rect x="448" y="484" width="52" height="22" rx="11" fill="none" stroke="#C8915F"/>
+  <text x="474" y="499" font-size="11" letter-spacing="1" fill="#C8915F" text-anchor="middle">KIT</text>
+  <text x="108" y="502" font-size="13" letter-spacing="2" fill="#C8915F">WARSTWA 1</text>
+  <text x="108" y="536" font-size="26" font-weight="700" fill="#EAF1F8">DECYZJE</text>
+  <text x="108" y="566" font-size="16" fill="#9FB3C8">ADR — niemutowalne decyzje</text>
+  <text x="108" y="590" font-size="16" fill="#9FB3C8">architektoniczne + indeks</text>
+  <path d="M -14 0 L 0 12 L 14 0" transform="translate(300,626)" stroke="#E8923F" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Warstwa 2 -->
+  <rect x="80" y="652" width="440" height="144" rx="14" fill="#1C2939" stroke="#2E415A" stroke-width="1.5"/>
+  <rect x="80" y="652" width="7" height="144" rx="3.5" fill="#2DD4BF"/>
+  <rect x="414" y="668" width="86" height="22" rx="11" fill="none" stroke="#2DD4BF"/>
+  <text x="457" y="683" font-size="11" letter-spacing="1" fill="#2DD4BF" text-anchor="middle">OPENSPEC</text>
+  <text x="108" y="686" font-size="13" letter-spacing="2" fill="#C8915F">WARSTWA 2</text>
+  <text x="108" y="720" font-size="26" font-weight="700" fill="#EAF1F8">ZMIANY</text>
+  <text x="108" y="750" font-size="16" fill="#9FB3C8">specs/ = stan bieżący (prawda)</text>
+  <text x="108" y="774" font-size="16" fill="#9FB3C8">changes/&lt;slug&gt;/ = delty zmian</text>
+  <path d="M -14 0 L 0 12 L 14 0" transform="translate(300,810)" stroke="#E8923F" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Warstwa 3 -->
+  <rect x="80" y="836" width="440" height="144" rx="14" fill="#1C2939" stroke="#2E415A" stroke-width="1.5"/>
+  <rect x="80" y="836" width="7" height="144" rx="3.5" fill="#E8923F"/>
+  <rect x="448" y="852" width="52" height="22" rx="11" fill="none" stroke="#C8915F"/>
+  <text x="474" y="867" font-size="11" letter-spacing="1" fill="#C8915F" text-anchor="middle">KIT</text>
+  <text x="108" y="870" font-size="13" letter-spacing="2" fill="#C8915F">WARSTWA 3</text>
+  <text x="108" y="904" font-size="26" font-weight="700" fill="#EAF1F8">ROLE I BRAMKI</text>
+  <text x="108" y="934" font-size="16" fill="#9FB3C8">Architekt · Implementer · Recenzent</text>
+  <text x="108" y="958" font-size="16" fill="#9FB3C8">recenzja ×2: plan (A) i kod (B)</text>
+
+  <!-- ====== PRAWA STRONA: CYKL ŻYCIA ZMIANY ====== -->
+  <text x="1310" y="262" font-size="16" letter-spacing="3" fill="#E8923F" font-weight="700" text-anchor="middle">CYKL ŻYCIA ZMIANY</text>
+  <circle cx="1310" cy="615" r="272" fill="none" stroke="#31435C" stroke-width="2" stroke-dasharray="6 7"/>
+
+  <!-- strzałki kierunku (zgodnie z ruchem wskazówek) -->
+  <path d="M -8 -7 L 10 0 L -8 7 Z" transform="translate(1446,379) rotate(30)" fill="#E8923F"/>
+  <path d="M -8 -7 L 10 0 L -8 7 Z" transform="translate(1582,615) rotate(90)" fill="#E8923F"/>
+  <path d="M -8 -7 L 10 0 L -8 7 Z" transform="translate(1446,851) rotate(150)" fill="#E8923F"/>
+  <path d="M -8 -7 L 10 0 L -8 7 Z" transform="translate(1174,851) rotate(210)" fill="#E8923F"/>
+  <path d="M -8 -7 L 10 0 L -8 7 Z" transform="translate(1038,615) rotate(270)" fill="#E8923F"/>
+  <path d="M -8 -7 L 10 0 L -8 7 Z" transform="translate(1174,379) rotate(330)" fill="#E8923F"/>
+
+  <!-- środek -->
+  <use xlink:href="#bird" href="#bird" transform="translate(1310,560) scale(0.7)"/>
+  <text x="1310" y="624" font-size="30" font-weight="800" fill="#EAF1F8" text-anchor="middle">main</text>
+  <text x="1310" y="652" font-size="14" fill="#9FB3C8" text-anchor="middle">specs/ = źródło prawdy</text>
+  <text x="1310" y="674" font-size="14" fill="#9FB3C8" text-anchor="middle">jedna zmiana = jeden branch = jeden PR</text>
+
+  <!-- 1. PROPOZYCJA (architekt, fiolet) -->
+  <rect x="1180" y="295" width="260" height="96" rx="14" fill="#1C2939" stroke="#2E415A" stroke-width="1.5"/>
+  <rect x="1180" y="295" width="7" height="96" rx="3.5" fill="#A78BFA"/>
+  <circle cx="1212" cy="343" r="15" fill="#A78BFA"/>
+  <text x="1212" y="349" font-size="17" font-weight="800" fill="#101820" text-anchor="middle">1</text>
+  <text x="1238" y="330" font-size="20" font-weight="700" fill="#EAF1F8">PROPOZYCJA</text>
+  <text x="1238" y="355" font-size="13.5" fill="#9FB3C8">/opsx:propose</text>
+  <text x="1238" y="376" font-size="13.5" fill="#9FB3C8">→ commit na main</text>
+
+  <!-- 2. BRAMKA TYP A (recenzent, bursztyn) -->
+  <rect x="1416" y="431" width="260" height="96" rx="14" fill="#1C2939" stroke="#2E415A" stroke-width="1.5"/>
+  <rect x="1416" y="431" width="7" height="96" rx="3.5" fill="#F0C24B"/>
+  <circle cx="1448" cy="479" r="15" fill="#F0C24B"/>
+  <text x="1448" y="485" font-size="17" font-weight="800" fill="#101820" text-anchor="middle">2</text>
+  <text x="1474" y="466" font-size="20" font-weight="700" fill="#EAF1F8">BRAMKA TYP A</text>
+  <text x="1474" y="491" font-size="13.5" fill="#9FB3C8">ręczna recenzja planu</text>
+  <text x="1474" y="512" font-size="13.5" fill="#9FB3C8">pakiet: openspec show</text>
+
+  <!-- 3. IMPLEMENTACJA (implementer, morski) -->
+  <rect x="1416" y="703" width="260" height="96" rx="14" fill="#1C2939" stroke="#2E415A" stroke-width="1.5"/>
+  <rect x="1416" y="703" width="7" height="96" rx="3.5" fill="#2DD4BF"/>
+  <circle cx="1448" cy="751" r="15" fill="#2DD4BF"/>
+  <text x="1448" y="757" font-size="17" font-weight="800" fill="#101820" text-anchor="middle">3</text>
+  <text x="1474" y="738" font-size="20" font-weight="700" fill="#EAF1F8">IMPLEMENTACJA</text>
+  <text x="1474" y="763" font-size="13.5" fill="#9FB3C8">branch task/&lt;slug&gt;</text>
+  <text x="1474" y="784" font-size="13.5" fill="#9FB3C8">wg tasks.md</text>
+
+  <!-- 4. FINISZ (implementer, morski) -->
+  <rect x="1180" y="839" width="260" height="96" rx="14" fill="#1C2939" stroke="#2E415A" stroke-width="1.5"/>
+  <rect x="1180" y="839" width="7" height="96" rx="3.5" fill="#2DD4BF"/>
+  <circle cx="1212" cy="887" r="15" fill="#2DD4BF"/>
+  <text x="1212" y="893" font-size="17" font-weight="800" fill="#101820" text-anchor="middle">4</text>
+  <text x="1238" y="874" font-size="20" font-weight="700" fill="#EAF1F8">FINISZ</text>
+  <text x="1238" y="899" font-size="13.5" fill="#9FB3C8">/opsx:archive + PROGRESS.md</text>
+  <text x="1238" y="920" font-size="13.5" fill="#9FB3C8">→ push → PR</text>
+
+  <!-- 5. BRAMKA TYP B (recenzent, bursztyn) -->
+  <rect x="944" y="703" width="260" height="96" rx="14" fill="#1C2939" stroke="#2E415A" stroke-width="1.5"/>
+  <rect x="944" y="703" width="7" height="96" rx="3.5" fill="#F0C24B"/>
+  <circle cx="976" cy="751" r="15" fill="#F0C24B"/>
+  <text x="976" y="757" font-size="17" font-weight="800" fill="#101820" text-anchor="middle">5</text>
+  <text x="1002" y="738" font-size="20" font-weight="700" fill="#EAF1F8">BRAMKA TYP B</text>
+  <text x="1002" y="763" font-size="13.5" fill="#9FB3C8">recenzja diffu PR</text>
+  <text x="1002" y="784" font-size="13.5" fill="#9FB3C8">kod + specs/</text>
+
+  <!-- 6. MERGE (właściciel, zieleń) -->
+  <rect x="944" y="431" width="260" height="96" rx="14" fill="#1C2939" stroke="#2E415A" stroke-width="1.5"/>
+  <rect x="944" y="431" width="7" height="96" rx="3.5" fill="#5FBF77"/>
+  <circle cx="976" cy="479" r="15" fill="#5FBF77"/>
+  <text x="976" y="485" font-size="17" font-weight="800" fill="#101820" text-anchor="middle">6</text>
+  <text x="1002" y="466" font-size="20" font-weight="700" fill="#EAF1F8">MERGE</text>
+  <text x="1002" y="491" font-size="13.5" fill="#9FB3C8">właściciel zatwierdza</text>
+  <text x="1002" y="512" font-size="13.5" fill="#9FB3C8">kod i spec spójnie na main</text>
+
+  <!-- ====== LEGENDA + STOPKA ====== -->
+  <circle cx="90" cy="1026" r="8" fill="#A78BFA"/>
+  <text x="106" y="1032" font-size="17" fill="#9FB3C8">Architekt — Opus</text>
+  <circle cx="330" cy="1026" r="8" fill="#2DD4BF"/>
+  <text x="346" y="1032" font-size="17" fill="#9FB3C8">Implementer — Sonnet</text>
+  <circle cx="620" cy="1026" r="8" fill="#F0C24B"/>
+  <text x="636" y="1032" font-size="17" fill="#9FB3C8">Recenzent — np. Gemini</text>
+  <circle cx="920" cy="1026" r="8" fill="#5FBF77"/>
+  <text x="936" y="1032" font-size="17" fill="#9FB3C8">Właściciel — człowiek</text>
+  <text x="1840" y="1032" font-size="17" font-style="italic" fill="#C8915F" text-anchor="end">od Jobs-To-Be-Done do job done ✓</text>
+</svg>
