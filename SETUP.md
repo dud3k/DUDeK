@@ -95,13 +95,19 @@ Architekt przeprowadzi wywiad (protokół: `docs/workflow/DISCOVERY.md`), ułoż
 Po inicjalizacji kitu wykonaj jednorazowo w katalogu projektu:
 
 ```bash
-# Zalecane: npx (bez instalacji globalnej)
-npx @fission-ai/openspec@latest init --tools claude
-
-# Alternatywa: instalacja globalna
+# Zalecane: instalacja globalna
 npm install -g @fission-ai/openspec@latest
 openspec init --tools claude
+
+# Alternatywa: npx (bez instalacji globalnej)
+npx @fission-ai/openspec@latest init --tools claude
 ```
+
+> **⚠️ Instalacja globalna jest zalecana**, bo skille `/opsx:*` i dokumentacja workflow
+> (`openspec show <slug>`, `openspec list --json`) wołają gołe polecenie `openspec` — bez
+> instalacji globalnej te wywołania kończą się `command not found`, a agent traci czas na
+> szukanie binarki. Jeśli wybierasz npx, każde wywołanie CLI musi mieć prefiks
+> `npx @fission-ai/openspec@latest`.
 
 **Co robi `openspec init --tools claude`:**
 - Tworzy `openspec/specs/` — stan bieżący systemu (source of truth, początkowo pusty)

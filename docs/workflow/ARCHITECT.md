@@ -90,7 +90,9 @@ git push origin main
 
 ## Struktura folderu zmiany OpenSpec
 
-Tworzona przez `/opsx:propose` (komendy dostępne po `openspec init` w projekcie):
+Tworzona przez `/opsx:propose` (komendy dostępne po `openspec init` w projekcie; skille i polecenia
+typu `openspec show` wymagają CLI zainstalowanego **globalnie** — `npm i -g @fission-ai/openspec` —
+patrz SETUP.md; bez tego wywołania `openspec ...` kończą się `command not found`):
 
 ```
 openspec/changes/<slug>/
