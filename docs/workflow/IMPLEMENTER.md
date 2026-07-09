@@ -21,14 +21,31 @@ NIE podejmujesz decyzji architektonicznych — jeśli coś wymaga decyzji, opisz
 7. **NIE twórz nowych folderów `openspec/changes/<slug>/` ani ADR.** To rola architekta (Opus).
    Jeśli widzisz potrzebę — zgłoś ją użytkownikowi.
 
+## Twój katalog roboczy (praca równoległa z architektem)
+
+Jeśli istnieje katalog **`<projekt>-impl`** (worktree gita utworzony przez architekta:
+`git worktree add --detach ../<projekt>-impl origin/main`) — pracujesz TAM, a właściciel otwiera
+Twoje okno w tym katalogu. Architekt pracuje w katalogu głównym; dzięki temu nie wchodzicie sobie
+w branche (osobny HEAD i staging, wspólne repo). Zasady w worktree:
+- zamiast `git pull origin main` używaj `git fetch origin`, a branch twórz z
+  `git checkout -b task/<slug> origin/main`;
+- nie przełączaj się na `main` (jest zajęty przez katalog główny architekta) — po skończonej
+  zmianie i utworzeniu PR po prostu zostań na branchu zadania;
+- pliki spoza gita (np. `.env.local`, `node_modules`) nie przenoszą się przez worktree —
+  jeśli ich brakuje, poproś właściciela o skopiowanie / instalację.
+
 ## Przed rozpoczęciem pracy
 
-1. `git pull origin main`
+1. `git pull origin main` (w worktree: `git fetch origin` — patrz wyżej)
 2. Przeczytaj `PROGRESS.md` — aktualny stan projektu i historia
 3. Przeczytaj przypisany `openspec/changes/<slug>/` — wszystkie pliki:
    `proposal.md` (cel i zakres), `design.md` (decyzje techniczne), **`tasks.md` (checklist implementacji)**
 4. **ZATRZYMAJ SIĘ.** Potwierdź użytkownikowi że rozumiesz zadanie i CZEKAJ na polecenie implementacji.
 5. Dopiero po potwierdzeniu utwórz branch: `git checkout -b task/<slug> main`
+   (w worktree: `git checkout -b task/<slug> origin/main`)
+6. **Implementację prowadź przez skill `/opsx:apply`** (jeśli dostępny) — prowadzi przez taski
+   zmiany i odhacza postęp w `tasks.md`. Jeśli właściciel wpisał `/opsx:apply <slug>` wprost —
+   to jest jednocześnie polecenie implementacji z kroku 4.
 
 Jeśli folderu `openspec/changes/<slug>/` nie ma w repo (a użytkownik prosi o implementację) —
 **nie zaczynaj**. Powiedz użytkownikowi że brakuje specyfikacji i poczekaj na architekta.
@@ -45,6 +62,8 @@ Jeśli folderu `openspec/changes/<slug>/` nie ma w repo (a użytkownik prosi o i
 5. **Push po każdej ukończonej zmianie:** `git push origin HEAD`
 6. **Zakres = specyfikacja.** Jeśli widzisz okazję do poprawy czegoś poza zmianą — zgłoś to
    użytkownikowi jako sugestię, NIE implementuj samodzielnie.
+7. **Aktualizuj listę zadań (TodoWrite) NA BIEŻĄCO** — odhaczaj pozycję natychmiast po jej
+   ukończeniu, nie hurtem co kilka tasków. Właściciel śledzi Twój postęp po tej liście na żywo.
 
 ## Skills (superpowers) — jeśli dostępne
 
